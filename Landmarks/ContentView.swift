@@ -8,9 +8,20 @@
 
 import SwiftUI
 
-struct ContentView : View {
+    struct ContentView : View {
     var body: some View {
-        Text("Hello World!")
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
+        HStack {
+            Text("Joshua Tree National Park")
+                .font(.subheadline)
+            Spacer()
+            Text("California")
+            .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
@@ -21,3 +32,6 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+// MARK: - Horiz Div
+
